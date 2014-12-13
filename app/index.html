@@ -14,13 +14,12 @@
   </head>
   <body>
     <script>
-      window.MyAppENV = {{ENV}};
-      window.EmberENV = window.MyAppENV.EmberENV;
+      window.EmberENV = {{EMBER_ENV}};
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/my-app.js"></script>
     <script>
-      window.MyApp = require('my-app/app')['default'].create(MyAppENV.APP);
+      window.MyApp = require('my-app/app')['default'].create({{APP_CONFIG}});
     </script>
   </body>
 </html>
