@@ -11,11 +11,15 @@
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/my-app.css">
+
+    {{content-for 'head-footer'}}
   </head>
   <body>
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/my-app.js"></script>
+
+    {{content-for 'body-footer'}}
   </body>
 </html>
