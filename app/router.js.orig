@@ -7,8 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+<<<<<<< Updated upstream
+=======
+  this.mount('myengine');
   this.route('about');
   this.route('contact');
+>>>>>>> Stashed changes
 });
 
 export default Router;
