@@ -45,12 +45,21 @@
     "eslint-plugin-ember": "^7.7.1",
     "eslint-plugin-node": "^10.0.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.9.2"
+    "paper-data-table": "^0.1.5",
+    "qunit-dom": "^0.9.2",
+    "sass": "^1.25.0"
   },
   "engines": {
     "node": "8.* || >= 10.*"
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-cli-sass": "^10.0.1",
+    "ember-paper": "^1.0.0-beta.26"
+  },
+  "resolutions": {
+    "angular-material-styles": "1.1.18"
   }
 }

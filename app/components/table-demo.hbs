@@ -1,0 +1,44 @@
+{{!-- {{#paper-checkbox value=value1 onChange=(action (mut value1))}}
+  A checkbox: {{value1}}
+{{/paper-checkbox}} --}}
+
+<div class="merchandising-rules-table">
+    {{#paper-data-table sortProp="name" sortDir="desc" selectable=true as |table|}}
+        {{#table.head as |head|}}
+            {{#head.column }}Priority{{/head.column}}
+            {{#head.column }}Type{{/head.column}}
+            {{#head.column }}Rule Name{{/head.column}}
+            {{#head.column }}Intent{{/head.column}}
+            {{#head.column }}Condition{{/head.column}}
+            {{#head.column }}Action{{/head.column}}
+            {{#head.column }}Date Range{{/head.column}}
+            {{#head.column }}Enabled{{/head.column}}
+            {{#head.column }}Selected{{/head.column}}
+        {{/table.head}}
+        {{#table.body as |body|}}
+            {{#each this.rules as |rule|}}
+                {{#body.row edit=true as |row|}}
+                    {{#row.cell}}{{rule.priority}}{{/row.cell}}
+                    {{#row.cell}}{{rule.type}}{{/row.cell}}
+                    {{#row.cell}}{{rule.name}}{{/row.cell}}
+                    {{#row.cell}}{{rule.intent}}{{/row.cell}}
+                    {{#row.cell}}{{rule.condition}}{{/row.cell}}
+                    {{#row.cell}}{{rule.action}}{{/row.cell}}
+                    {{#row.cell}}{{rule.dateRange}}{{/row.cell}}
+                    {{#row.cell checkbox=true}}
+                        {{#paper-checkbox
+                        value=rule.enabled
+                        onChange=(action (mut rule.enabled))}}
+                        {{/paper-checkbox}}
+                    {{/row.cell}}
+                    {{#row.cell checkbox=true}}
+                        {{#paper-checkbox
+                        value=rule.selected
+                        onChange=(action (mut rule.selected))}}
+                        {{/paper-checkbox}}
+                    {{/row.cell}}
+                {{/body.row}}
+            {{/each}}
+        {{/table.body}}
+    {{/paper-data-table}}
+</div>
