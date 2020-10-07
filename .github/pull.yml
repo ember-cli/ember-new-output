@@ -1,0 +1,47 @@
+version: "1"
+rules:
+  - base: stable
+    upstream: ember-cli:stable
+
+    # note: rebase will append upstream changes *after* our own changes
+    # after a PR is merged
+    # mergeMethod: rebase
+
+    # note: hardreset will discard local changes, and keep the PR branch
+    # accurate with upstream. However, this means that changes *after*
+    # the upstream changes (such as the commit to enable pull bot)
+    # or not kept at the end / kept as the most recent commit
+    # mergeMethod: hardreset
+
+    mergeMethod: "none"
+
+    # Optional Options
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
+
+  # Keep the TypeScript branch in sync with stable
+  - base: stable-sans-linting
+    upstream: NullVoxPopuli:stable
+    mergeMethod: "none"
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
+
+  # Keep the beta branch up to date
+  - base: beta
+    upstream: ember-cli:master
+    mergeMethod: rebase
+    assignees:
+      - NullVoxPopuli
+    reviewers:
+      - NullVoxPopuli
+    conflictReviewers:
+      - NullVoxPopuli
+

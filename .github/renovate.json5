@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "config:base"
+  ],
+
+  // only update the stable-ts branch.
+  // stable will reflect an exact copy of upstream ember-cli
+  "baseBranches": ["stable-ts"],
+  // only opens a PR if a version bump would be out of semver range
+  // e.g.: ^1.0.0 -> ^2.0.0
+  "rangeStrategy": "replace",
+
+  "packageRules": [
+    ////////////////////////////////////////
+    // Grouping namespaced packages together
+    ////////////////////////////////////////
+    {
+      "packagePatterns": [
+        "^ember-cli-type*",
+        "^@types\/*",
+        "typescript"
+      ],
+      "groupName": "TypeScript Dependencies for the 'stable-ts' branch"
+    }
+  ]
+}
