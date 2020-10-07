@@ -18,7 +18,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "start": "ember serve",
+    "start": "JOBS=1 ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
   },

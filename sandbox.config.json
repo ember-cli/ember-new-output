@@ -1,0 +1,8 @@
+{
+  "template": "node",
+  "infiniteLoopProtection": true,
+  "hardReloadOnChange": true,
+  "container": {
+    "port": 4200
+  }
+}

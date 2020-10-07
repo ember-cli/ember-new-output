@@ -4,6 +4,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    // hack until https://github.com/ember-cli/ember-cli/pull/8845
+    // is complete
+    // this enables the sandbox to be forked
+    name: 'my-app',
     // Add options here
   });
 
