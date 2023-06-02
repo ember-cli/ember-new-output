@@ -1,32 +1,56 @@
-# my-addon
+# my-app
 
-[Short description of the addon.]
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
+## Prerequisites
 
-## Compatibility
+You will need the following things properly installed on your computer.
 
-* Ember.js v4.4 or above
-* Ember CLI v4.4 or above
-* Node.js v16 or above
-
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with npm)
+* [Ember CLI](https://cli.emberjs.com/release/)
+* [Google Chrome](https://google.com/chrome/)
 
 ## Installation
 
-```
-ember install my-addon
-```
+* `git clone <repository-url>` this repository
+* `cd my-app`
+* `npm install`
 
+## Running / Development
 
-## Usage
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-[Longer description of how to use the addon in apps.]
+### Code Generators
 
+Make use of the many generators for code, try `ember help generate` for more details
 
-## Contributing
+### Running Tests
 
-See the [Contributing](CONTRIBUTING.md) guide for details.
+* `ember test`
+* `ember test --server`
 
+### Linting
 
-## License
+* `npm run lint`
+* `npm run lint:fix`
 
-This project is licensed under the [MIT License](LICENSE.md).
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://cli.emberjs.com/release/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)

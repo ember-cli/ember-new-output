@@ -1,10 +1,8 @@
 {
-  "name": "my-addon",
+  "name": "my-app",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
-  "keywords": [
-    "ember-addon"
-  ],
+  "private": true,
+  "description": "Small description for my-app goes here",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -24,12 +22,7 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
-    "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each"
-  },
-  "dependencies": {
-    "ember-cli-babel": "^7.26.11",
-    "ember-cli-htmlbars": "^6.2.0"
+    "test:ember": "ember test"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.3",
@@ -37,25 +30,29 @@
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.0.1",
     "@ember/test-helpers": "^2.9.3",
-    "@embroider/test-setup": "^2.1.1",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.0.1",
     "ember-auto-import": "^2.6.3",
     "ember-cli": "~5.0.0-beta.0",
+    "ember-cli-app-version": "^6.0.0",
+    "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.1",
+    "ember-cli-htmlbars": "^6.2.0",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
+    "ember-data": "~4.11.3",
+    "ember-fetch": "^8.1.2",
     "ember-load-initializers": "^2.1.2",
+    "ember-modifier": "^4.1.0",
     "ember-page-title": "^7.0.0",
     "ember-qunit": "^6.2.0",
     "ember-resolver": "^10.0.0",
     "ember-source": "~4.12.0",
-    "ember-source-channel-url": "^3.0.0",
     "ember-template-lint": "^5.7.2",
-    "ember-try": "^2.0.0",
+    "ember-welcome-page": "^7.0.1",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-ember": "^11.5.0",
@@ -70,18 +67,13 @@
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^32.0.0",
     "stylelint-prettier": "^3.0.0",
+    "tracked-built-ins": "^3.1.1",
     "webpack": "^5.78.0"
-  },
-  "peerDependencies": {
-    "ember-source": "^4.0.0"
   },
   "engines": {
     "node": "16.* || >= 18"
   },
   "ember": {
     "edition": "octane"
-  },
-  "ember-addon": {
-    "configPath": "tests/dummy/config"
   }
 }
