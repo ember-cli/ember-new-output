@@ -7,6 +7,6 @@ import { WelcomePage } from 'ember-welcome-page';
   {{outlet}}
 
   {{! The following component displays Ember's default welcome message. }}
-  <WelcomePage @extension="gjs" />
+  <WelcomePage />
   {{! Feel free to remove this! }}
 </template>
